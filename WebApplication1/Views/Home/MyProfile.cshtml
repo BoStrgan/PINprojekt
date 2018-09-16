@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "My profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model WebApplication1.Data.Models.User
+<style>
+    .listaCss {
+        margin: 50px 0;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <ul style="list-style-type:none;" class="centered">
+                <li class="listaCss"><span class="carousel-control-next-icon"></span> IME: @Model.FirstName</li>
+                <li class="listaCss"><span class="carousel-control-next-icon"></span> PREZIME: @Model.LastName</li>
+                <li class="listaCss"><span class="carousel-control-next-icon"></span> EMAIL:<a href="mailto: @Model.Email">@Model.Email</a></li>
+       
+            </ul>
+        </div>
+       
+    </div>
+</div>
+
